@@ -15,7 +15,7 @@ include("header.php")
     <div class="container-fluid">
     <div class="card">
   <div class="card-header">
-    <center><b>ฟอร์มสมัครสมาชิก</b></center>
+    <center><b><h3>ฟอร์มสมัครสมาชิก</h1></b></center>
   </div>
   <div class="card-body">
 <form name="form1" action="insert.php" method="POST">
