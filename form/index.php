@@ -19,19 +19,19 @@ include("header.php")
   </div>
   <div class="carousel-inner carousel-fade">
     <div class="carousel-item active" data-bs-interval="2000">
-      <img src="website1.png" class="d-block w-100" alt="...">
+      <img src="web1.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
        
       </div>
     </div>
     <div class="carousel-item carousel-fade" data-bs-interval="2000">
-      <img src="website4.jpg" class="d-block w-100" alt="...">
+      <img src="web2.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
        
       </div>
     </div>
     <div class="carousel-item carousel-fade">
-      <img src="website5.jpg" class="d-block w-100" alt="...">
+      <img src="web3.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         
       </div>

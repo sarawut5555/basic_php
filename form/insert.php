@@ -1,3 +1,11 @@
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<style>
+    html, body{
+      font-family: 'Prompt', sans-serif;
+      padding: 0;
+      margin: 0;
+    }
+  </style>
 <?php
 include("config.inc.php"); 
 $firstname = $_POST['text_firstname'];
@@ -12,7 +20,17 @@ $email = $_POST['text_email'];
 $sql = "INSERT INTO tbl_member (id, firstname, name, lastname, sex, birthdate, address, phonenumber, email) VALUES ('', '$firstname', '$name', '$lastname', '$sex', '$birthdate', '$address', '$tel', '$email')";
 
 if(mysqli_query($conn, $sql)){
-    echo "เพิ่มข้อมูลสำเร็จ";
+    echo "<script>
+    Swal.fire({
+        icon: 'success',
+        title: '<h3>ระบบทำการบันทึกข้อมูลสำเร็จ</h3>',
+        type: 'success',
+        showConfirmButton: false,
+        timer: 2000
+    }).then(function() {
+        window.location = 'frmRegister.php';
+    });
+    </script>";
 }else{
     echo "เพิ่มข้อมูลไม่สำเร็จ";
 }

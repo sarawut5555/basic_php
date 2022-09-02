@@ -31,6 +31,9 @@
         <li class="nav-item">
           <a class="nav-link active text-light" aria-current="page" href="frmRegister.php"><i class="bi bi-box-arrow-in-right"></i> สมัครสมาชิก</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link active text-light" aria-current="page" href="listmember.php"><i class="bi bi-box-arrow-in-right"></i> รายชื่อสมาชิก</a>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots"></i>
             ดูเพิ่มเติม

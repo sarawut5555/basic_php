@@ -2,10 +2,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
 </head>
 <body>
 <?php
@@ -39,11 +39,9 @@ include("header.php")
     <div class="row"><!-- row2 -->
     <div class="col-md-2">
         <label for="exampleFormControlInput1" class="form-label"><b>เพศ</b></label>
-      <br>
         <input type="radio" class="form-check-input" name="text_sex" id="text_sex" value="ชาย">ชาย
-      <br>
         <input type="radio" class="form-check-input" name="text_sex" id="text_sex" value="หญิง">หญิง
-      <br>
+
     </div>
 
     <div class="col-md-3">
