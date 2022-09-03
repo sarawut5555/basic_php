@@ -66,7 +66,7 @@ include("header.php")
 <div class="container text-center">
     <br>
     <center>
-      <button type="submit" class="btn btn-primary text-light"><b>บันทึก</b></button>
+      <button type="submit" class="btn btn-success text-light"><b>บันทึก</b></button>
       <button type="reset" class="btn btn-danger text-light"><b>ยกเลิก</b></button>
     </center>
 </div>

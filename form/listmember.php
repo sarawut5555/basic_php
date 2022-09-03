@@ -16,20 +16,20 @@
     ?>
     <br />
 <main>
-<table class="table">
+<table class="table table-bordered">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">คำนำหน้า</th>
-      <th scope="col">ชื่อ</th>
-      <th scope="col">นามสกุล</th>
-      <th scope="col">เพศ</th>
-      <th scope="col">ว/ด/ปี เกิด</th>
-      <th scope="col">ที่อยู่</th>
-      <th scope="col">เบอร์โทร</th>
-      <th scope="col">อีเมล์</th>
-      <th scope="col">แก้ไข</th>
-      <th scope="col">ลบ</th>
+      <th scope="col">No</th>
+      <th scope="col">Firstname</th>
+      <th scope="col">Name</th>
+      <th scope="col">Lastname</th>
+      <th scope="col">Sex</th>
+      <th scope="col">Birthdate</th>
+      <th scope="col">Address</th>
+      <th scope="col">Phonenumber</th>
+      <th scope="col">Email</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
     </tr>
   </thead>
   <tbody>
@@ -46,8 +46,8 @@
       <td><?php echo $objResult['address']; ?></td>
       <td><?php echo $objResult['phonenumber']; ?></td>
       <td><?php echo $objResult['email']; ?></td>
-      <td>edit</td>
-      <td>delete</td>
+      <td><a href="#" class="btn btn-warning"><i class="bi bi-pencil-fill"></a></i></td>
+      <td><a href="#" class="btn btn-danger"><i class="bi bi-person-x-fill"></a></i></td>
     </tr>
     <?php
     }
