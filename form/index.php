@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>charlotte</title>
+    <title>Charlotte</title>
 </head>
 <body>
 <?php
@@ -25,7 +25,7 @@ include("header.php")
       </div>
     </div>
     <div class="carousel-item carousel-fade" data-bs-interval="2000">
-      <img src="web2.jpg" class="d-block w-100" alt="...">
+      <img src="web2.jpg"  class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
        
       </div>

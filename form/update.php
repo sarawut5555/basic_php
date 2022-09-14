@@ -1,14 +1,16 @@
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-<style> 
-    body {
-    font-family: 'Prompt', sans-serif;
-  }
-  </style>
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
 <?php
-
 include("config.inc.php");
+$text_id = $_POST['text_id'];
 
 $firstname = $_POST['text_firstname'];
 $name = $_POST['text_name'];
@@ -18,11 +20,11 @@ $birthdate = $_POST['text_birthdate'];
 $address = $_POST['text_address'];
 $tel = $_POST['text_tel'];
 $email = $_POST['text_email'];
-$user = $_POST['txt_username'];
 $password = $_POST['txt_password'];
-
-$sql = "INSERT INTO tbl_member (id, firstname, name, lastname, sex, birthdate, address, phonenumber, email, username, password) VALUES ('', '$firstname', '$name', '$lastname', '$sex', '$birthdate', '$address', '$tel', '$email', '$user', '$password')";
-if(mysqli_query($conn, $sql)) {
+ //echo $text_id;
+$SQL = "UPDATE tbl_member SET firstname='$firstname', name='$name', lastname='$lastname', sex='$sex', birthdate='$birthdate', address='$address', phonenumber='$tel', email='$email', password='$password'  WHERE id='$text_id'";
+$objQuery = mysqli_query($conn, $SQL);
+if($objQuery){
     echo"<script>
     Swal.fire({
         type: 'success',
@@ -31,7 +33,7 @@ if(mysqli_query($conn, $sql)) {
         showConfirmButton: false,
         timer: 2000
       }).then(function() {
-        window.location = 'frmRegister.php';
+        window.location = 'listmember.php';
       });
       </script>";
 }else{
@@ -39,15 +41,15 @@ if(mysqli_query($conn, $sql)) {
     Swal.fire({
         type: 'error',
         icon: 'error',
-        title: 'Fail',
+        title: 'error',
         showConfirmButton: false,
         timer: 2000
       }).then(function() {
-        window.location = 'frmRegister.php';
+        window.location = 'listmember.php';
       });
       </script>";
 }
-$conn -> close();
-
 ?>
+</body>
+</html>
 
