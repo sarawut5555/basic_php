@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
@@ -22,7 +22,7 @@ include("header.php");
 $recive_id = $_GET['get_id'];
 #echo $recive_id;
 
-$SQL = "select * from tbl_member where id=$recive_id";
+$SQL = "select * from tbl_65309010036 where id=$recive_id";
 $objQuery = mysqli_query($conn, $SQL);
 $objResult = mysqli_fetch_array($objQuery, MYSQLI_ASSOC);
 ?>

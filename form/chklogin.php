@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chklogin</title>
@@ -28,7 +28,7 @@ $txt_password = $_POST['txt_password'];
 // echo "<br>";
 // echo $text_password;
 
-$SQL = "SELECT * FROM tbl_member WHERE username = '$txt_username' && password='$txt_password'";
+$SQL = "SELECT * FROM tbl_65309010036 WHERE username = '$txt_username' && password='$txt_password'";
 $objQuery = mysqli_query($conn, $SQL);
 $objResult = mysqli_fetch_array($objQuery);
 if($objResult){

@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";//hosting/127.0.0.1
-$user = "sarawut"; //userdatabass
-$password = "1234"; //user password
-$dbname = "db_basic_php"; // database name
+$user = "admin_db_member"; //userdatabass
+$password = "123456"; //user password
+$dbname = "db_member65"; // database name
 
 //create connection
 $conn = new mysqli($servername, $user, $password, $dbname);
@@ -14,5 +14,7 @@ if ($conn->connect_error) {
   else{
   echo "Connnect Successfully!";
   }
+
+  $conn -> set_charset('utf8');
 
 ?>

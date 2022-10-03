@@ -1,11 +1,12 @@
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-<style> 
-    body {
-    font-family: 'Prompt', sans-serif;
-  }
-  </style>
-  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+<style>
+    html, body{
+      font-family: 'Prompt', sans-serif;
+    }
+    </style>
 <?php
 
 include("config.inc.php");
@@ -21,7 +22,7 @@ $email = $_POST['text_email'];
 $user = $_POST['txt_username'];
 $password = $_POST['txt_password'];
 
-$sql = "INSERT INTO tbl_member (id, firstname, name, lastname, sex, birthdate, address, phonenumber, email, username, password) VALUES ('', '$firstname', '$name', '$lastname', '$sex', '$birthdate', '$address', '$tel', '$email', '$user', '$password')";
+$sql = "INSERT INTO tbl_65309010036 (id, firstname, name, lastname, sex, birthdate, address, phonenumber, email, username, password) VALUES ('', '$firstname', '$name', '$lastname', '$sex', '$birthdate', '$address', '$tel', '$email', '$user', '$password')";
 if(mysqli_query($conn, $sql)) {
     echo"<script>
     Swal.fire({

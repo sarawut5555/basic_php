@@ -131,4 +131,21 @@ echo $i." ".pow($i+2);
 // ." ".pow($i,3)."<br>";
 }
 ?> -->
+<?php
 
+$firstname = $_POST['text_firstname'];
+echo
+$name = $_POST['text_name'];
+$lastname = $_POST['text_lastnameM'];
+$sex = $_POST['text_sex'];
+$birthdate = $_POST['text_birthdate'];
+$address = $_POST['text_address'];
+$tel = $_POST['text_tel'];
+$email = $_POST['text_email'];
+$user = $_POST['txt_username'];
+$password = $_POST['txt_password'];
+?>
+<?php
+$SQL = "insert into tbl_member"
+if($Query)
+    echo""
